@@ -26,7 +26,7 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 let fullName = `${me.firstName} ${me.lastName}`
-console.log(fullName);
+console.log(`My fullname is: ${fullName}`);
 
 /* 3. Nested arrays
   - Console.log your first favorite food
@@ -44,7 +44,7 @@ console.log(`My third favorite food is: ${me.favThreeFoods[2]}`);
 */
 
 console.log(`Current shoe count: ${me.shoeCount} pairs`);
-me.shoeCount = me.shoeCount + 1
+me.shoeCount += 1
 console.log(`Updated shoe counnt: ${me.shoeCount} pairs`);
 
 
@@ -55,3 +55,7 @@ console.log(`Updated shoe counnt: ${me.shoeCount} pairs`);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+console.log('Current me object:', me);
+me.favoriteColor = 'Purple'
+console.log('Updated me object:', me);
